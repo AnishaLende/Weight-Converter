@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    height: 100vh;
+    background:url("img.jpg") no-repeat center center/cover;
+}
+
+.container {
+    /* background:linear-gradient(90deg, #69b7eb, #b83db3, #f4d6db) ; */
+    background: linear-gradient(to right, #7b157b, #ffc0cb);
+    font-size: 16px;
+    max-width: 28em;
+    padding: 3em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 1em;
+    border: 5px solid purple;
+    box-shadow: 15px 15px 20px purple;
+}
+
+h1 {
+    border-bottom: 3px dashed rgb(124, 0, 128);
+    border-radius:1px;
+    color:rgb(20, 19, 19);
+    text-align:center;
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 1em;
+    /* text-decoration:underline; */
+}
+
+.inputs input {
+    display: block;
+    width: 100%;
+    font-size: 1.35em;
+    padding: 0.4em;
+    border: 3px solid #3c2626;
+    border-radius: 4em;
+}
+
+.inputs label {
+    display: block;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom:  0.25em;
+
+}
+
+.inputs :not(:last-child) {
+    margin-bottom: 1.2em;
+}
+
+@media screen and (max-width: 28em) {
+    .container {
+        font-size: 14px;
+    }
+}
